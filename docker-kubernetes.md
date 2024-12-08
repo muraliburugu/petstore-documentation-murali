@@ -30,3 +30,9 @@ sudo apt-get install -y kubelet kubeadm kubectl
 sudo apt-mark hold kubelet kubeadm kubectl
 sudo snap install kube-apiserver
 ```
+
+```
+sudo usermod -aG docker jenkins
+sudo systemctl restart jenkins
+sudo chmod 666 /var/run/docker.sock
+```
